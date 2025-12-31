@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0; /* Ubah ke 0 supaya nav bar rapat ke tepi */
+            background-color: #f4f4f4;
+        }
+        /* Nav bar di bahagian atas */
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #3498db; /* Warna berubah bila mouse lalu - Markah Kreativiti! */
+        }
+        header {
+            background: #444;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #eee;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form {
+            background: #eee;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="wed.html">Home</a>
+        <a href="about me.html">About Me</a>
+    </nav>
+
+    <header>
+        <h1>Welcome to My Professional Homepage</h1>
+    </header>
+
+    <div class="container">
+        
+        <img src="profile pic.jpeg" alt="Professional Portrait of Nurina" width="250">
+
+        <h2>About Me</h2>
+        <p>
+            Hello! My name is <strong>Nurina binti Ibrahim Ghany</strong>. I am currently a student at <strong>FutureTech Academy</strong> 
+            studying Web Development. I am passionate about technology, coding, and creating 
+            innovative solutions for the web.
+        </p>
+
+        <p>You can find my work on <a href="https://github.com" target="_blank">GitHub</a></p>
+
+        <h3>My Technical Skills</h3>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript basics</li>
+            <li>Project Management</li>
+            <li>UI/UX Design Concepts</li>
+        </ul>
+
+        <h3>Education History</h3>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Institution</th>
+                <th>Course/Achievement</th>
+            </tr>
+            <tr>
+                <td>2024 - Present</td>
+                <td>FutureTech Academy</td>
+                <td>Diploma in IT / Web Development</td>
+            </tr>
+            <tr>
+                <td>2013- 2023</td>
+                <td>Methodist Girls School</td>
+                <td>High School</td>
+            </tr>
+        </table>
+
+        <div id="contact">
+            <h3>Contact Me</h3>
+            <form action="#">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30" placeholder="Type your message here..."></textarea><br><br>
+                
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 20px;">
+        <p>&copy; 2026 Nurina | Assignment 1: HTML</p>
+        <p>Want to know more? <a href="about me.html">View my Gallery & Interests &rarr;</a></p>
+    </footer>
+
+</body>
+</html>
