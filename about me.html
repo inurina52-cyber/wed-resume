@@ -1,60 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Nurina</title>
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 0; background-color: #f0f2f5; }
-        nav { background-color: #333; padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; }
-        header { background: #2c3e50; color: #fff; padding: 2rem; text-align: center; }
-        .container { background: #fff; padding: 30px; margin: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-radius: 10px; }
-        .gallery-table { width: 100%; border-collapse: separate; border-spacing: 10px; }
-        .gallery-table td { padding: 20px; text-align: center; background: #f8f9fa; border: 1px dashed #ccc; border-radius: 8px; }
-    </style>
+    <title>Contact Me</title>
 </head>
 <body>
 
+    <h1>Contact Me</h1>
+
     <nav>
-        <a href="wed.html">Home</a>
-        <a href="about.html">About Me</a>
+        <a href="wed.html">Back to Home</a>
     </nav>
 
-    <header>
-        <h1>More About Myself</h1>
-    </header>
+    <hr>
 
-    <div class="container">
-        <h2>Beyond the Studies</h2>
-        <p>Beyond my studies at FutureTech Academy, I am actively involved in several other areas that contribute to my personal and professional growth:</p>
+    <p>If you would like to get in touch with me, please fill out the form below:</p>
 
-        <ul>
-            <li><strong>Web Design (UI/UX):</strong> Passionate about creating user-friendly and visually appealing digital interfaces.</li>
-            <li><strong>Photography:</strong> Exploring visual storytelling through the lens, with a focus on capturing moments and perspectives.</li>
-            <li><strong>Language Learning:</strong> Dedicated to expanding my global communication skills by learning new languages.</li>
-        </ul>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
 
-        <h3>Interest Gallery</h3>
-        <table class="gallery-table">
-            <tr>
-                <td><strong>Creative Layouts</strong><br>Modern Web Structures</td>
-                <td><strong>Visual Arts</strong><br>Color Theory & Design</td>
-            </tr>
-            <tr>
-                <td><strong>Technical Logic</strong><br>Problem Solving</td>
-                <td><strong>Future Goals</strong><br>Full-Stack Developer</td>
-            </tr>
-        </table>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <label>Subject:</label><br>
+        <select name="subject">
+            <option value="collaboration">Collaboration</option>
+            <option value="question">General Question</option>
+            <option value="hi">Just saying Hi!</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+    
         
-        <p style="margin-top: 30px; text-align: center;">
-            <a href="wed.html" style="color: #2c3e50; font-weight: bold;">&larr; Back to Main Resume</a>
-        </p>
-    </div>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
 
-    <footer style="text-align: center; padding: 20px; color: #777;">
-        <p>&copy; 2026 Nurina | Web Development DCE3724</p>
-    </footer>
+        <input type="submit" value="Send Message">
+        <input type="reset" value="Clear Form">
+    </form>
 
 </body>
 </html>
